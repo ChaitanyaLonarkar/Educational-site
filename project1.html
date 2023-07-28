@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codemate Education</title>
+    <link rel="stylesheet" href="hs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Nunito', sans-serif;
+            color: rgb(29 38 82);
+            letter-spacing: 0.7;
+        }
+      .container{
+            margin: auto;
+            overflow: hidden;
+            width: 670px;
+      }
+      .container p{
+        color: #19335e;
+      }
+        .card{
+            border: 1px solid black;
+            background: aliceblue;
+        }
+       p.align1,h3,h2{
+            text-align: justify;
+            font-size: medium;
+            max-width: 700px;
+            padding: 10px;
+       }
+       .btnrdmr{
+        background-color: rgb( 13, 110, 253);
+        width: 100px;
+        padding: 10px;
+        margin: 10px;
+       }
+       a{
+        text-decoration: none;
+       }
+       @media(max-width:770px){
+          .container{
+            width: 95%;
+          }
+          .card{
+            max-width: 100%;
+            margin: 10px;
+          }
+          .card-img-top{
+            width: 100%;
+            height: 100%;
+          }
+          p.align1,h3,h2{
+              text-align: justify;
+              font-size: medium;
+              padding: 10px;
+          }
+
+        }
+    </style>
+  </head>
+  <body>
+    <!--    nav bar start -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/images/profile.jpg" alt="Logo" />
+      </div>
+      <div class="links">
+        <ul id="list">
+          <li><a href="index.html" target="">Home</a></li>
+          <li><a href="about.html" target="">About</a></li>
+          <li><a href="http://" target="">Blog</a></li>
+
+          <li><a href="http://" target="">Courses</a></li>
+          <li><a href="Contact.html" target="">Contact</a></li>
+          <li><a href="register.html" target="">Join for Free</a></li>
+          <li id="close"><i class="fa-solid fa-circle-xmark " onclick="untoggle()" ></i></li>
+        </ul>
+      </div>
+      <div class="menu">
+        <img src="/images/menu.png" onclick="toggle()" alt="">
+      </div>
+    </nav>
+    <!--    nav bar end -->
+    <div class="container">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   <div class="card">
+    <img src="/images/luke-chesser-JKUTrJ4vK00-unsplash.jpg" class="card-img-top" alt="..." height="450px">
+    <div class="card-body">
+      <h2>Learn Data Science in the Easiest Way</h2>
+      <p><h3>What is data science?</h3>
+        <p class="align1"> Data science is the study of data to extract meaningful insights for business. It is a multidisciplinary approach that combines principles and practices from the fields of mathematics, statistics, artificial intelligence, and computer engineering to analyze large amounts of data. This analysis helps data scientists to ask and answer questions like what happened, why it happened, what will happen, and what can be done with the results.</p>
+        
+        <h3>Why is data science important?</h3>
+        <p class="align1"> Data science is important because it combines tools, methods, and technology to generate meaning from data. Modern organizations are inundated with data; there is a proliferation of devices that can automatically collect and store information. Online systems and payment portals capture more data in the fields of e-commerce, medicine, finance, and every other aspect of human life. We have text, audio, video, and image data available in vast quantities.  </p>
+        
+        <h3> History of data science</h3>
+        <p class="align1"> While the term data science is not new, the meanings and connotations have changed over time. The word first appeared in the ’60s as an alternative name for statistics. In the late ’90s, computer science professionals formalized the term. A proposed definition for data science saw it as a separate field with three aspects: data design, collection, and analysis. It still took another decade for the term to be used outside of academia. </p>
+        
+        <h3> Future of data science</h3>
+        <p class="align1"> Artificial intelligence and machine learning innovations have made data processing faster and more efficient. Industry demand has created an ecosystem of courses, degrees, and job positions within the field of data science. Because of the cross-functional skillset and expertise required, data science shows strong projected growth over the coming decades.</p>
+        
+        <h3> What is data science used for?</h3>
+        <p class="align1"> Data science is used to study data in four main ways:
+        <ol>
+        <li>Descriptive analysis : </li>
+        <p class="align1">Descriptive analysis examines data to gain insights into what happened or what is happening in the data environment. It is characterized by data visualizations such as pie charts, bar charts, line graphs, tables, or generated narratives. For example, a flight booking service may record data like the number of tickets booked each day. Descriptive analysis will reveal booking spikes, booking slumps, and high-performing months for this service.</p>
+        
+        <li>Diagnostic analysis : </li>
+        <p class="align1">Diagnostic analysis is a deep-dive or detailed data examination to understand why something happened. It is characterized by techniques such as drill-down, data discovery, data mining, and correlations. Multiple data operations and transformations may be performed on a given data set to discover unique patterns in each of these techniques.For example, the flight service might drill down on a particularly high-performing month to better understand the booking spike. This may lead to the discovery that many customers visit a particular city to attend a monthly sporting event.</p>
+        
+        <li>Predictive analysis : </li>
+        <p class="align1">Predictive analysis uses historical data to make accurate forecasts about data patterns that may occur in the future. It is characterized by techniques such as machine learning, forecasting, pattern matching, and predictive modeling. In each of these techniques, computers are trained to reverse engineer causality connections in the data.For example, the flight service team might use data science to predict flight booking patterns for the coming year at the start of each year. The computer program or algorithm may look at past data and predict booking spikes for certain destinations in May. Having anticipated their customer’s future travel requirements, the company could start targeted advertising for those cities from February.</p>
+        
+        <li>Prescriptive analysis : </li>
+        <p class="align1">Prescriptive analytics takes predictive data to the next level. It not only predicts what is likely to happen but also suggests an optimum response to that outcome. It can analyze the potential implications of different choices and recommend the best course of action. It uses graph analysis, simulation, complex event processing, neural networks, and recommendation engines from machine learning. </p></p>
+    </ol>
+        
+    <p class="align1">Back to the flight booking example, prescriptive analysis could look at historical marketing campaigns to maximize the advantage of the upcoming booking spike. A data scientist could project booking outcomes for different levels of marketing spend on various marketing channels. These data forecasts would give the flight booking company greater confidence in their marketing decisions.</p>
+        
+        <h3> What are the benefits of data science for business?</h3>
+        <p class="align1">Data science is revolutionizing the way companies operate. Many businesses, regardless of size, need a robust data science strategy to drive growth and maintain a competitive edge. Some key benefits include:</p>
+        </p>
+        <div class="btnrdmr">
+      <a href="https://aws.amazon.com/what-is/data-science/#:~:text=Data%20science%20is%20an%20umbrella,%2C%20mathematics%2C%20and%20statistical%20analysis." style="color: #ffffff;">Read Next?</a>
+    </div>
+    </div>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="f-container">
+    <div class="company">
+      <div class="logo">
+        <!-- <img src="/images/" alt="Logo" /> -->
+        <h3>CODEMATE</h3>
+      </div>
+      <div class="para">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+          aspernatur pariatur veritatis, dolorem nobis autem neque totam ea.
+        </p>
+      </div>
+    </div>
+    <div class="link">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="index.html" target="">Home</a></li>
+        <li><a href="about.html" target="">About</a></li>
+        <li><a href="http://" target="">Courses</a></li>
+        <li><a href="Contact.html" target="">Contact</a></li>
+        <li><a href="register.html" target="">Join for Free</a></li>
+      </ul>
+    </div>
+    <div class="contact-info">
+      <h3>Office</h3>
+      <div class="location">
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Hingna Rd, Rajendra Nagar, Yahodha Nagar, Nagpur(MH) 440036</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p>codemateIt@gmail.com</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p>+91-7894564136</p>
+        </div>
+      </div>
+    </div>
+    <div class="connect">
+      <h3>Connect</h3>
+      <div class="mail">
+        <i class="fa-solid fa-envelope"></i>
+
+        <input type="email" placeholder="Enter your email id" />
+        <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="media">
+        <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+        <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+        <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+        <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Codemate It Service:@2023-All Rights Reserved</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codemate Education</title>
+    <link rel="stylesheet" href="hs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Nunito', sans-serif;
+        color: rgb(29 38 82);
+        letter-spacing: 0.7;
+    }
+  .container{
+        margin: auto;
+        overflow: hidden;
+        width: 670px;
+  }
+  .container p{
+    color: #19335e;
+  }
+    .card{
+        border: 1px solid black;
+        background: aliceblue;
+    }
+   p.align1,h3,h2{
+        text-align: justify;
+        font-size: medium;
+        max-width: 700px;
+        padding: 10px;
+   }
+   .btnrdmr{
+    background-color: rgb( 13, 110, 253);
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+   }
+   a{
+    text-decoration: none;
+   }
+   @media(max-width:770px){
+      .container{
+        width: 95%;
+      }
+      .card{
+        max-width: 100%;
+        margin: 10px;
+      }
+      .card-img-top{
+        width: 100%;
+        height: 100%;
+      }
+      p.align1,h3,h2{
+          text-align: justify;
+          font-size: medium;
+          padding: 10px;
+      }
+
+    }
+</style>
+  </head>
+  <body>
+    <!--    nav bar start -->
+    <nav class="navbar">
+        <div class="logo">
+          <img src="/images/profile.jpg" alt="Logo" />
+        </div>
+        <div class="links">
+          <ul id="list">
+            <li><a href="index.html" target="">Home</a></li>
+            <li><a href="about.html" target="">About</a></li>
+            <li><a href="blog.html" target="">Blog</a></li>
+            <li><a href="courses.html" target="">Courses</a></li>
+            <li><a href="Contact.html" target="">Contact</a></li>
+            <li><a href="register.html" target="">Join for Free</a></li>
+            <li id="close"><i class="fa-solid fa-circle-xmark " onclick="untoggle()" ></i></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <img src="/images/menu.png" onclick="toggle()" alt="">
+        </div>
+      </nav>
+    <div class="container">
+   <div class="card">
+    <img src="images/christopher-gower-m_HRfLhgABo-unsplash.jpg" class="card-img-top" alt="..." height="450px">
+    <div class="card-body">
+      <h2>Learn Software Testing in the Easiest Way</h2>
+      <p><h3>How does software testing work?</h3>
+        <p class="align1"> Software testing is the process of evaluating and verifying that a software product or application does what it is supposed to do. The benefits of testing include preventing bugs, reducing development costs and improving performance.   </p>
+        
+        <h3>Types of software testing</h3>
+        <p class="align1"> There are many different types of software tests, each with specific objectives and strategies : 
+            <ul>
+                <li><b>Acceptance testing:</b> Verifying whether the whole system works as intended.</li>
+                <li><b>Integration testing:</b>Ensuring that software components or functions operate together.</li>
+                <li><b>Unit testing:</b>Validating that each software unit performs as expected. A unit is the smallest testable component of an application.</li>
+                <li><b>Functional testing:</b>Checking functions by emulating business scenarios, based on functional requirements. Black-box testing is a common way to verify functions.</li>
+                <li><b>Performance testing:</b>Testing how the software performs under different workloads. Load testing, for example, is used to evaluate performance under real-life load conditions.</li>
+                <li><b>Regression testing:</b>Checking whether new features break or degrade functionality. Sanity testing can be used to verify menus, functions and commands at the surface level, when there is no time for a full regression test.</li>
+                <li><b>Stress testing:</b>Testing how much strain the system can take before it fails. Considered to be a type of non-functional testing.</li>
+                <li><b>Usability testing:</b>Validating how well a customer can use a system or web application to complete a task.</li>
+            </ul>
+        </p>
+        
+        <p class="align1"> In each case, validating base requirements is a critical assessment. Just as important, exploratory testing helps a tester or testing team uncover hard-to-predict scenarios and situations that can lead to software errors.</p>
+        
+        <p class="align1"> Even a simple application can be subject to a large number and variety of tests. A test management plan helps to prioritize which types of testing provide the most value – given available time and resources. Testing effectiveness is optimized by running the fewest number of tests to find the largest number of defects.</p>
+        
+        <h3> History of software testing</h3>
+        <p class="align1">Software testing arrived alongside the development of software, which had its beginnings just after the second world war. Computer scientist Tom Kilburn is credited with writing the first piece of software, which debuted on June 21, 1948, at the University of Manchester in England. It performed mathematical calculations using machine code instructions.</p>
+        <p class="align1">Debugging was the main testing method at the time and remained so for the next two decades. By the 1980s, development teams looked beyond isolating and fixing software bugs to testing applications in real-world settings. It set the stage for a broader view of testing, which encompassed a quality assurance process that was part of the software development life cycle.</p>
+        <p class="align1">“In the 1990s, there was a transition from testing to a more comprehensive process called quality assurance, which covers the entire software development cycle and affects the processes of planning, design, creation and execution of test cases, support for existing test cases and test environments,” says Alexander Yaroshko in his post on the uTest developer site.</p>
+        <p class="align1">“Testing had reached a qualitatively new level, which led to the further development of methodologies, the emergence of powerful tools for managing the testing process and test automation tools.” </p>
+        <b>Continuous testing</b>
+        <p class="align1">Software testing has traditionally been separated from the rest of development. It is often conducted later in the software development life cycle after the product build or execution stage. A tester may only have a small window to test the code – sometimes just before the application goes to market. If defects are found, there may be little time for recoding or retesting. It is not uncommon to release software on time, but with bugs and fixes needed. Or a testing team may fix errors but miss a release date.</p>
+        <p class="align1">Doing test activities earlier in the cycle helps keep the testing effort at the forefront rather than as an afterthought to development. Earlier software tests also mean that defects are less expensive to resolve.</p>
+        <p class="align1">Many development teams now use a methodology known as continuous testing. It is part of a DevOps approach – where development and operations collaborate over the entire product life cycle. The aim is to accelerate software delivery while balancing cost, quality and risk. With this testing technique, teams don’t need to wait for the software to be built before testing starts. They can run tests much earlier in the cycle to discover defects sooner, when they are easier to fix.</p>
+        <div class="btnrdmr">
+      <a href="https://www.ibm.com/topics/software-testing" class="btn btn-primary" style="color: #ffffff;">Read Next?</a></div>
+    </div>
+    </div>
+  </div>
+</div>
+</main>
+<footer>
+    <div class="f-container">
+      <div class="company">
+        <div class="logo">
+          <!-- <img src="/images/" alt="Logo" /> -->
+          <h3>CODEMATE</h3>
+        </div>
+        <div class="para">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            aspernatur pariatur veritatis, dolorem nobis autem neque totam ea.
+          </p>
+        </div>
+      </div>
+      <div class="link">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="index.html" target="">Home</a></li>
+          <li><a href="about.html" target="">About</a></li>
+          <li><a href="courses.html" target="">Courses</a></li>
+          <li><a href="Contact.html" target="">Contact</a></li>
+          <li><a href="register.html" target="">Join for Free</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Office</h3>
+        <div class="location">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Hingna Rd, Rajendra Nagar, Yahodha Nagar, Nagpur(MH) 440036</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p>codemateIt@gmail.com</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>+91-7894564136</p>
+          </div>
+        </div>
+      </div>
+      <div class="connect">
+        <h3>Connect</h3>
+        <div class="mail">
+          <i class="fa-solid fa-envelope"></i>
+
+          <input type="email" placeholder="Enter your email id" />
+          <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="media">
+          <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+          <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+          <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Codemate It Service:@2023-All Rights Reserved</p>
+    </div>
+  </footer>
+<script src="main.js"></script>
+  </body>
+</html>

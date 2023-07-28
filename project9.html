@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codemate Education</title>
+    <link rel="stylesheet" href="hs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Nunito', sans-serif;
+        color: rgb(29 38 82);
+        letter-spacing: 0.7;
+    }
+  .container{
+        margin: auto;
+        overflow: hidden;
+        width: 670px;
+  }
+  .container p{
+    color: #19335e;
+  }
+    .card{
+        border: 1px solid black;
+        background: aliceblue;
+    }
+   p.align1,h3,h2{
+        text-align: justify;
+        font-size: medium;
+        max-width: 700px;
+        padding: 10px;
+   }
+   .btnrdmr{
+    background-color: rgb( 13, 110, 253);
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+   }
+   a{
+    text-decoration: none;
+   }
+   @media(max-width:770px){
+      .container{
+        width: 95%;
+      }
+      .card{
+        max-width: 100%;
+        margin: 10px;
+      }
+      .card-img-top{
+        width: 100%;
+        height: 100%;
+      }
+      p.align1,h3,h2{
+          text-align: justify;
+          font-size: medium;
+          padding: 10px;
+      }
+
+    }
+</style>
+  </head>
+  <body>
+    <!--    nav bar start -->
+    <nav class="navbar">
+        <div class="logo">
+          <img src="/images/profile.jpg" alt="Logo" />
+        </div>
+        <div class="links">
+          <ul id="list">
+            <li><a href="index.html" target="">Home</a></li>
+            <li><a href="about.html" target="">About</a></li>
+            <li><a href="blog.html" target="">Blog</a></li>
+            <li><a href="courses.html" target="">Courses</a></li>
+            <li><a href="Contact.html" target="">Contact</a></li>
+            <li><a href="register.html" target="">Join for Free</a></li>
+            <li id="close"><i class="fa-solid fa-circle-xmark " onclick="untoggle()" ></i></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <img src="/images/menu.png" onclick="toggle()" alt="">
+        </div>
+      </nav>
+    <div class="container">
+   <div class="card">
+    <img src="/images/thomas-jensen-plL_yZ7vuxM-unsplash.jpg" class="card-img-top" alt="..." height="450px">
+    <div>
+      <h2>Learn Networking in the Easiest Way</h2>
+      <p><h3>What is Networking?</h3>
+        <p class="align1"> Networking, also known as computer networking, is the practice of transporting and exchanging data between nodes over a shared medium in an information system. Networking comprises not only the design, construction and use of a network, but also the management, maintenance and operation of the network infrastructure, software and policies.</p>
+        
+        <p class="align1"> Computer networking enables devices and endpoints to be connected to each other on a local area network (LAN) or to a larger network, such as the internet or a private wide area network (WAN). This is an essential function for service providers, businesses and consumers worldwide to share resources, use or offer services, and communicate. Networking facilitates everything from telephone calls to text messaging to streaming video to the internet of things (IoT).</p>
+        
+        <p class="align1"> The level of skill required to operate a network directly correlates to the complexity of a given network. For example, a large enterprise may have thousands of nodes and rigorous security requirements, such as end-to-end encryption, requiring specialized network administrators to oversee the network.</p>
+        <p class="align1">At the other end of the spectrum, a layperson may set up and perform basic troubleshooting for a home Wi-Fi network with a short instruction manual. Both examples constitute computer networking.</p>
+        
+        <h3> Types of networking</h3>
+        <p class="align1"> There are two primary types of computer networking: wired networking and wireless networking.</p>
+        <p class="align1"> Wired networking requires the use of a physical medium for transport between nodes. Copper-based Ethernet cabling, popular due to its low cost and durability, is commonly used for digital communications in businesses and homes. Alternatively, optical fiber is used to transport data over greater distances and at faster speeds, but it has several tradeoffs, including higher costs and more fragile components.</p>
+        <p class="align1"> Wireless networking uses radio waves to transport data over the air, enabling devices to be connected to a network without any cabling. Wireless LANs are the most well-known and widely deployed form of wireless networking. Alternatives include microwave, satellite, cellular and Bluetooth, among others.</p>
+        <p class="align1"> As a general rule, wired networking offers greater speed, reliability and security compared to wireless networks; wireless networking tends to provide more flexibility, mobility and scalability.</p>
+        <p class="align1"> It should be noted that these types of networking concern the physical layer of the network. Networking can also be classified according to how it's built and designed, encompassing approaches that include software-defined networking (SDN) or overlay networks. Networking can also be categorized by environment and scale, such as LAN, campus, WAN, data center networks or storage area networks.</p>
+        <h3> Components of networking</h3>
+        <p class="align1"> Computer networking requires the use of physical network infrastructure -- including switches, routers and wireless access points -- and the underlying firmware that operates such equipment. Other components include the software necessary to monitor, manage and secure the network.</p>
+        <p class="align1"> Additionally, networks rely on the use of standard protocols to uniformly perform discrete functions or communicate different types of data, regardless of the underlying hardware.</p>
+        <p class="align1"> For example, voice over IP (VoIP) can transport IP telephony traffic to any endpoint that supports the protocol. HTTP provides a common way for browsers to display webpages. The internet protocol suite, also known as TCP/IP, is a family of protocols responsible for transporting data and services over an IP-based network.</p>
+        <div class="btnrdmr">
+      <a href="https://www.techtarget.com/searchnetworking/definition/networking" class="btn btn-primary" style="color: #ffffff;">Read Next?</a>
+    </div>
+    </div>
+  </div>
+</div>
+</main>
+<footer>
+    <div class="f-container">
+      <div class="company">
+        <div class="logo">
+          <!-- <img src="/images/" alt="Logo" /> -->
+          <h3>CODEMATE</h3>
+        </div>
+        <div class="para">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            aspernatur pariatur veritatis, dolorem nobis autem neque totam ea.
+          </p>
+        </div>
+      </div>
+      <div class="link">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="index.html" target="">Home</a></li>
+          <li><a href="about.html" target="">About</a></li>
+          <li><a href="courses.html" target="">Courses</a></li>
+          <li><a href="Contact.html" target="">Contact</a></li>
+          <li><a href="register.html" target="">Join for Free</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Office</h3>
+        <div class="location">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Hingna Rd, Rajendra Nagar, Yahodha Nagar, Nagpur(MH) 440036</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p>codemateIt@gmail.com</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>+91-7894564136</p>
+          </div>
+        </div>
+      </div>
+      <div class="connect">
+        <h3>Connect</h3>
+        <div class="mail">
+          <i class="fa-solid fa-envelope"></i>
+
+          <input type="email" placeholder="Enter your email id" />
+          <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="media">
+          <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+          <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+          <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Codemate It Service:@2023-All Rights Reserved</p>
+    </div>
+  </footer>
+<script src="main.js"></script>
+  </body>
+</html>

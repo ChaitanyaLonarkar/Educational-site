@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codemate Education</title>
+    <link rel="stylesheet" href="responsiveabc.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="hs.css">
+  </head>
+  <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Nunito', sans-serif;
+        color: rgb(29 38 82);
+        letter-spacing: 0.7;
+    }
+  .container{
+        margin: auto;
+        overflow: hidden;
+        width: 670px;
+  }
+  .container p{
+    color: #19335e;
+  }
+    .card{
+        border: 1px solid black;
+        background: aliceblue;
+    }
+   p.align1,h3,h2{
+        text-align: justify;
+        font-size: medium;
+        max-width: 700px;
+        padding: 10px;
+   }
+   .btnrdmr{
+    background-color: rgb( 13, 110, 253);
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+   }
+   a{
+    text-decoration: none;
+   }
+   @media(max-width:770px){
+      .container{
+        width: 95%;
+      }
+      .card{
+        max-width: 100%;
+        margin: 10px;
+      }
+      .card-img-top{
+        width: 100%;
+        height: 100%;
+      }
+      p.align1,h3,h2{
+          text-align: justify;
+          font-size: medium;
+          padding: 10px;
+      }
+
+    }
+</style>
+  </head>
+  <body>
+    <!--    nav bar start -->
+    <nav class="navbar">
+        <div class="logo">
+          <img src="/images/profile.jpg" alt="Logo" />
+        </div>
+        <div class="links">
+          <ul id="list">
+            <li><a href="index.html" target="">Home</a></li>
+            <li><a href="about.html" target="">About</a></li>
+            <li><a href="http://" target="">Blog</a></li>
+  
+            <li><a href="http://" target="">Courses</a></li>
+            <li><a href="Contact.html" target="">Contact</a></li>
+            <li><a href="register.html" target="">Join for Free</a></li>
+            <li id="close"><i class="fa-solid fa-circle-xmark " onclick="untoggle()" ></i></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <img src="/images/menu.png" onclick="toggle()" alt="">
+        </div>
+      </nav>
+    <div class="container">
+    <div class="card">
+        <img src="possessed-photography-jIBMSMs4_kA-unsplash.jpg" class="card-img-top" alt="Machine learning Image" height="450px">
+        <div>
+          <h2>Learn Machine learning in the Easiest Way</h2>
+          <p class="card-text">
+            <h3> What is machine learning?</h3>
+            <p class="align1">Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.</p>
+            
+            <p class="align1">IBM has a rich history with machine learning. One of its own, Arthur Samuel, is credited for coining the term, “machine learning” with his research (PDF, 481 KB) (link resides outside IBM) around the game of checkers. Robert Nealey, the self-proclaimed checkers master, played the game on an IBM 7094 computer in 1962, and he lost to the computer. Compared to what can be done today, this feat seems trivial, but it’s considered a major milestone in the field of artificial intelligence.</p>
+            
+            <p class="align1">Over the last couple of decades, the technological advances in storage and processing power have enabled some innovative products based on machine learning, such as Netflix’s recommendation engine and self-driving cars.</p>
+            
+            <p class="align1">Machine learning is an important component of the growing field of data science. Through the use of statistical methods, algorithms are trained to make classifications or predictions, and to uncover key insights in data mining projects. These insights subsequently drive decision making within applications and businesses, ideally impacting key growth metrics. As big data continues to expand and grow, the market demand for data scientists will increase. They will be required to help identify the most relevant business questions and the data to answer them.</p>
+            
+            <p class="align1">Machine learning algorithms are typically created using frameworks that accelerate solution development, such as TensorFlow and PyTorch.</p>
+            
+         
+            <h3> Machine Learning vs. Deep Learning vs. Neural Networks</h3>
+            <p class="align1">Since deep learning and machine learning tend to be used interchangeably, it’s worth noting the nuances between the two. Machine learning, deep learning, and neural networks are all sub-fields of artificial intelligence. However, neural networks is actually a sub-field of machine learning, and deep learning is a sub-field of neural networks.</p>
+            
+            <p class="align1">The way in which deep learning and machine learning differ is in how each algorithm learns. "Deep" machine learning can use labeled datasets, also known as supervised learning, to inform its algorithm, but it doesn’t necessarily require a labeled dataset. Deep learning can ingest unstructured data in its raw form (e.g., text or images), and it can automatically determine the set of features which distinguish different categories of data from one another. This eliminates some of the human intervention required and enables the use of larger data sets. You can think of deep learning as "scalable machine learning" as Lex Fridman notes in this MIT lecture (01:08:05) (link resides outside IBM).</p>
+            
+            <p class="align1">Classical, or "non-deep", machine learning is more dependent on human intervention to learn. Human experts determine the set of features to understand the differences between data inputs, usually requiring more structured data to learn.</p>
+            
+            <p class="align1">Neural networks, or artificial neural networks (ANNs), are comprised of node layers, containing an input layer, one or more hidden layers, and an output layer. Each node, or artificial neuron, connects to another and has an associated weight and threshold. If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network by that node. The “deep” in deep learning is just referring to the number of layers in a neural network. A neural network that consists of more than three layers—which would be inclusive of the input and the output—can be considered a deep learning algorithm or a deep neural network. A neural network that only has three layers is just a basic neural network.</p>
+            
+            <p class="align1">Deep learning and neural networks are credited with accelerating progress in areas such as computer vision, natural language processing, and speech recognition.</p>
+            
+            <p class="align1">See the blog post “AI vs. Machine Learning vs. Deep Learning vs. Neural Networks: What’s the Difference?” for a closer look at how the different concepts relate.</p>
+            
+            <h3> How machine learning works</h3>
+            <p class="align1">UC Berkeley (link resides outside IBM) breaks out the learning system of a machine learning algorithm into three main parts.</p>
+            
+            <p class="align1">A Decision Process: In general, machine learning algorithms are used to make a prediction or classification. Based on some input data, which can be labeled or unlabeled, your algorithm will produce an estimate about a pattern in the data.
+            An Error Function: An error function evaluates the prediction of the model. If there are known examples, an error function can make a comparison to assess the accuracy of the model.
+            A Model Optimization Process: If the model can fit better to the data points in the training set, then weights are adjusted to reduce the discrepancy between the known example and the model estimate. The algorithm will repeat this “evaluate and optimize” process, updating weights autonomously until a threshold of accuracy has been met.</p></p>
+            <div class="btnrdmr">
+          <a href="https://www.ibm.com/topics/machine-learning" class="btn btn-primary" style="color: #ffffff;">Read Next?</a>
+        </div>
+        </div>
+      </div>
+    </div>
+</main>
+<footer>
+    <div class="f-container">
+      <div class="company">
+        <div class="logo">
+          <!-- <img src="/images/" alt="Logo" /> -->
+          <h3>CODEMATE</h3>
+        </div>
+        <div class="para">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            aspernatur pariatur veritatis, dolorem nobis autem neque totam ea.
+          </p>
+        </div>
+      </div>
+      <div class="link">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="index.html" target="">Home</a></li>
+          <li><a href="about.html" target="">About</a></li>
+          <li><a href="http://" target="">Courses</a></li>
+          <li><a href="Contact.html" target="">Contact</a></li>
+          <li><a href="register.html" target="">Join for Free</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Office</h3>
+        <div class="location">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Hingna Rd, Rajendra Nagar, Yahodha Nagar, Nagpur(MH) 440036</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p>codemateIt@gmail.com</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>+91-7894564136</p>
+          </div>
+        </div>
+      </div>
+      <div class="connect">
+        <h3>Connect</h3>
+        <div class="mail">
+          <i class="fa-solid fa-envelope"></i>
+
+          <input type="email" placeholder="Enter your email id" />
+          <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="media">
+          <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+          <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+          <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Codemate It Service:@2023-All Rights Reserved</p>
+    </div>
+  </footer>
+<script src="main.js"></script>
+  </body>
+</html>

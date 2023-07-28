@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codemate Education</title>
+    <link rel="stylesheet" href="hs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Nunito', sans-serif;
+        color: rgb(29 38 82);
+        letter-spacing: 0.7;
+    }
+  .container{
+        margin: auto;
+        overflow: hidden;
+        width: 670px;
+  }
+  .container p{
+    color: #19335e;
+  }
+    .card{
+        border: 1px solid black;
+        background: aliceblue;
+    }
+   p.align1,h3,h2{
+        text-align: justify;
+        font-size: medium;
+        max-width: 700px;
+        padding: 10px;
+   }
+   .btnrdmr{
+    background-color: rgb( 13, 110, 253);
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+   }
+   a{
+    text-decoration: none;
+   }
+   @media(max-width:770px){
+      .container{
+        width: 95%;
+      }
+      .card{
+        max-width: 100%;
+        margin: 10px;
+      }
+      .card-img-top{
+        width: 100%;
+        height: 100%;
+      }
+      p.align1,h3,h2{
+          text-align: justify;
+          font-size: medium;
+          padding: 10px;
+      }
+
+    }
+</style>
+  </head>
+  <body>
+    <!--    nav bar start -->
+    <nav class="navbar">
+        <div class="logo">
+          <img src="/images/profile.jpg" alt="Logo" />
+        </div>
+        <div class="links">
+          <ul id="list">
+            <li><a href="index.html" target="">Home</a></li>
+            <li><a href="about.html" target="">About</a></li>
+            <li><a href="blog.html" target="">Blog</a></li>
+            <li><a href="courses.html" target="">Courses</a></li>
+            <li><a href="Contact.html" target="">Contact</a></li>
+            <li><a href="register.html" target="">Join for Free</a></li>
+            <li id="close"><i class="fa-solid fa-circle-xmark " onclick="untoggle()" ></i></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <img src="/images/menu.png" onclick="toggle()" alt="">
+        </div>
+      </nav>
+    <div class="container">
+    
+   <div class="card">
+    <img src="images/emile-perron-xrVDYZRGdw4-unsplash.jpg" class="card-img-top" alt="Full Stack Image" height="450px">
+    <div>
+      <h2>Learn Full Stack (MERN) in the Easiest Way</h2>
+      <p><h3>What is Full Stack (MERN)?</h3>
+        <p class="align1"> MERN is one of several variations of the MEAN stack (MongoDB Express Angular Node), where the traditional Angular.js front-end framework is replaced with React.js. Other variants include MEVN (MongoDB, Express, Vue, Node), and really any front-end JavaScript framework can work.</p>
+        <p class="align1">Ready to take the next step? Set up your free Atlas account by clicking below and try our MERN Stack Tutorial to create a full-stack MERN application in no time.</p>
+        
+        <h3>What is the MERN stack?</h3>
+        
+        <h3> MERN stands for MongoDB, Express, React, Node, after the four key technologies that make up the stack.</h3>
+        <p class="align1"> 
+            <ul>
+                <li>Express(.js) — Node.js web framework</li>
+                <li>React(.js) — a client-side JavaScript framework</li>
+                <li>Node(.js) — the premier JavaScript web server</li>
+            </ul>
+        </p>
+        <p class="align1">Express and Node make up the middle (application) tier. Express.js is a server-side web framework, and Node.js is the popular and powerful JavaScript server platform. Regardless of which variant you choose, ME(RVA)N is the ideal approach to working with JavaScript and JSON, all the way through.</p>
+        <h3>How does the MERN stack work?</h3> 
+    <p class="align1">The MERN architecture allows you to easily construct a three-tier architecture (front end, back end, database) entirely using JavaScript and JSON.</p>
+    <h3> React.js front end</h3>
+    <p class="align1">The top tier of the MERN stack is React.js, the declarative JavaScript framework for creating dynamic client-side applications in HTML. React lets you build up complex interfaces through simple components, connect them to data on your back-end server, and render them as HTML.</p>
+    <p class="align1">React’s strong suit is handling stateful, data-driven interfaces with minimal code and minimal pain, and it has all the bells and whistles you’d expect from a modern web framework: great support for forms, error handling, events, lists, and more.</p>
+    <h3> Express.js and Node.js server tier</h3>
+    <p class="align1">The next level down is the Express.js server-side framework, running inside a Node.js server. Express.js bills itself as a “fast, unopinionated, minimalist web framework for Node.js,” and that is indeed exactly what it is. Express.js has powerful models for URL routing (matching an incoming URL with a server function), and handling HTTP requests and responses.</p>
+    <p class="align1">By making XML HTTP Requests (XHRs) or GETs or POSTs from your React.js front end, you can connect to Express.js functions that power your application. Those functions, in turn, use MongoDB’s Node.js drivers, either via callbacks or using promises, to access and update data in your MongoDB database.</p>
+    <h3> MongoDB database tier</h3>
+    <p class="align1">If your application stores any data (user profiles, content, comments, uploads, events, etc.), then you’re going to want a database that’s just as easy to work with as React, Express, and Node.</p>
+    <p class="align1">That’s where MongoDB comes in: JSON documents created in your React.js front end can be sent to the Express.js server, where they can be processed and (assuming they’re valid) stored directly in MongoDB for later retrieval. Again, if you’re building in the cloud, you’ll want to look at Atlas. If you’re looking to set up your own MERN stack, read on!</p>
+    <h3> Is MERN a full-stack solution?</h3>
+    <p class="align1">Yes, MERN is a full stack, following the traditional three-tier architectural pattern, including the front-end display tier (React.js), application tier (Express.js and Node.js), and database tier (MongoDB).</p>
+    <div class="btnrdmr">
+      <a href="https://www.mongodb.com/mern-stack" class="btn btn-primary" style="color: #ffffff;">Read Next?</a>
+    </div>
+    </div>
+  </div>
+</div>
+</main>
+<footer>
+    <div class="f-container">
+      <div class="company">
+        <div class="logo">
+          <!-- <img src="/images/" alt="Logo" /> -->
+          <h3>CODEMATE</h3>
+        </div>
+        <div class="para">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            aspernatur pariatur veritatis, dolorem nobis autem neque totam ea.
+          </p>
+        </div>
+      </div>
+      <div class="link">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="index.html" target="">Home</a></li>
+          <li><a href="about.html" target="">About</a></li>
+          <li><a href="courses.html" target="">Courses</a></li>
+          <li><a href="Contact.html" target="">Contact</a></li>
+          <li><a href="register.html" target="">Join for Free</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Office</h3>
+        <div class="location">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Hingna Rd, Rajendra Nagar, Yahodha Nagar, Nagpur(MH) 440036</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p>codemateIt@gmail.com</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>+91-7894564136</p>
+          </div>
+        </div>
+      </div>
+      <div class="connect">
+        <h3>Connect</h3>
+        <div class="mail">
+          <i class="fa-solid fa-envelope"></i>
+
+          <input type="email" placeholder="Enter your email id" />
+          <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="media">
+          <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+          <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+          <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Codemate It Service:@2023-All Rights Reserved</p>
+    </div>
+  </footer>
+<script src="main.js"></script>
+  </body>
+</html>

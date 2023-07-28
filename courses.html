@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Courses</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="hs.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      .container {
+        margin-left: 80px;
+        max-width: 60%;
+        overflow: hidden;
+      }
+      .heading {
+        font-size: xx-large;
+        font-weight: bold;
+      }
+      .headinga {
+        font-size: x-large;
+        font-weight: 500;
+      }
+      .pgb {
+        max-width: 100%;
+      }
+      .card {
+        margin-right: 20px;
+        /* border: 1px solid black; */
+        border-radius: 5px;
+        background: aliceblue;
+      }
+      .rowa {
+        /* width: 100%; */
+        display: flex;
+        margin-bottom: 20px;
+      }
+      .pgc {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .pgc {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .hvr {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: large;
+        font-weight: bold;
+        color: #ffffff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: grey;
+        max-width: 100%;
+      }
+      .hvr:hover {
+        background-color: rgb(14, 127, 239);
+        font-weight: bold;
+        color: #ffffff;
+        max-width: 100%;
+      }
+      .hvra {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: large;
+        font-weight: bold;
+        color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 100%;
+      }
+      .hvra:hover {
+        background-color: rgb(14, 127, 239);
+        font-weight: bold;
+        color: #ffffff;
+        max-width: 100%;
+      }
+      .cor {
+        text-align: left;
+        margin-left: 10px;
+        font-size: medium;
+        font-weight: bold;
+        color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      b.ctext {
+        text-align: center;
+        padding: 15px;
+      }
+
+      .lst {
+        list-style: none;
+        width: 500px;
+      }
+    
+      .card-body {
+        text-align: center;
+      }
+      .fr {
+        color: #ffffff;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Nunito", sans-serif;
+        letter-spacing: 0.07em;
+        /* overflow: hidden; */
+        /* width: 100%; */
+      }
+      .rght {
+        overflow: hidden;
+      }
+       .container img{
+          height: 190px;
+          width: 100%;
+        }
+      
+      @media (max-width: 786px) {
+        .container {
+          margin-left: 0px;
+          max-width: 90%;
+          overflow: hidden;
+          margin: auto;
+        }
+        .rowa {
+          height: auto;
+          flex-wrap: wrap;
+          flex-direction: row;
+        }
+        .card {
+          /* flex: 0%;  */
+          margin-right: 0px;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--    nav bar start -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/images/profile.jpg" alt="Logo" />
+      </div>
+      <div class="links">
+        <ul id="list">
+          <li><a href="index.html" target="">Home</a></li>
+          <li><a href="about.html" target="">About</a></li>
+          <li><a href="blog.html" target="">Blog</a></li>
+          <li><a href="courses.html" target="">Courses</a></li>
+          <li><a href="Contact.html" target="">Contact</a></li>
+          <li><a href="register.html" target="">Join for Free</a></li>
+          <li id="close">
+            <i class="fa-solid fa-circle-xmark" onclick="untoggle()"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="menu">
+        <img src="/images/menu.png" onclick="toggle()" alt="" />
+      </div>
+    </nav>
+    <!--    nav bar end -->
+    <!-- main part of website -->
+    <main>
+      <!-- page1 start -->
+      <div class="page1">
+        <div class="inside">
+          <h1>Courses/</h1>
+        </div>
+      </div>
+      <!-- page1 end -->
+      <!-- page2 start -->
+
+      <div class="above-c" style="display: flex; flex-wrap: wrap">
+        <div class="container">
+          <p class="heading">Explore the Catalog</p>
+          <p class="headinga">Free courses</p>
+          <div class="pgb">
+            <div class="rowa">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="/images/rubaitul-azad-ZIPFteu-R8k-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5>Python</h5>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">Free</div>
+                </a>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <img
+                  src="/images/valery-sysoev-p9OkL4yW3C8-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5>HTML</h5>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">Free</div>
+                </a>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <img
+                  src="/images/gabriel-heinzer-g5jpH62pwes-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>Java Script</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">Free</div>
+                </a>
+              </div>
+            </div>
+
+            <div class="rowa">
+              <div class="card" style="width: 18rem">
+                <img src="/images/java.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p>Java</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">Free</div>
+                </a>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <img
+                  src="/images/rubaitul-azad-Y9kOsyoWyaU-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>SQL</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">Free</div>
+                </a>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <img
+                  src="/images/chris-ried-ieic5Tq8YMk-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>C</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">Free</div>
+                </a>
+              </div>
+            </div>
+
+            <div class="rowa">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="/images/mohammad-rahmani-oXlXu2qukGE-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>C++</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">Free</div>
+                </a>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <img src="/images/css.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p>CSS</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">Free</div>
+                </a>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <img
+                  src="/images/rahul-mishra-XXMA-8fBB-g-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>Node JS</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">Free</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <br />
+          <p class="headinga">Top Career Paths</p>
+
+          <div class="pgc">
+            <div class="rowa">
+              <div class="card" style="max-width: 18rem">
+                <img
+                  src="/images/luke-chesser-JKUTrJ4vK00-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>Data Analyst</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvra">
+                    <div class="cor">Include 8 Courses</div>
+                    <hr />
+                    <div class="cor">With Certificate</div>
+                    <hr />
+                    <div class="cor">Beginner Friendly</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card" style="max-width: 18rem">
+                <img
+                  src="/images/pankaj-patel-bYiw48KLbmw-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <p>Full-Stack Engineer</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvra">
+                    <div class="cor">Include 8 Courses</div>
+                    <hr />
+                    <div class="cor">With Certificate</div>
+                    <hr />
+                    <div class="cor">Beginner Friendly</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card" style="max-width: 18rem">
+                <img
+                  src="/images/rami-al-zayat-w33-zg-dNL4-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <p>App Developer</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvra">
+                    <div class="cor">Include 8 Courses</div>
+                    <hr />
+                    <div class="cor">With Certificate</div>
+                    <hr />
+                    <div class="cor">Beginner Friendly</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="rowa">
+              <div class="card" style="max-width: 18rem">
+                <img
+                  src="/images/frontend.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <p>Front-End Engineer</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvra">
+                    <div class="cor">Include 8 Courses</div>
+                    <hr />
+                    <div class="cor">With Certificate</div>
+                    <hr />
+                    <div class="cor">Beginner Friendly</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card" style="max-width: 18rem">
+                <img src="/images/ds.jpg" class="card-img-top" alt="..." />
+
+                <div class="card-body">
+                  <p>Data Scientist</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvra">
+                    <div class="cor">Include 8 Courses</div>
+                    <hr />
+                    <div class="cor">With Certificate</div>
+                    <hr />
+                    <div class="cor">Beginner Friendly</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card" style="max-width: 18rem">
+                <img
+                  src="/images/myriam-jessier-eveI7MOcSmw-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <p>Data Engineer</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvra">
+                    <div class="cor">Include 8 Courses</div>
+                    <hr />
+                    <div class="cor">With Certificate</div>
+                    <hr />
+                    <div class="cor">Beginner Friendly</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="rowa">
+              <div class="card" style="max-width: 18rem">
+                <img
+                  src="/images/levart_photographer-7q-kE4SZzvQ-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <p>AI Engineer</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvra">
+                    <div class="cor">Include 8 Courses</div>
+                    <hr />
+                    <div class="cor">With Certificate</div>
+                    <hr />
+                    <div class="cor">Beginner Friendly</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card" style="max-width: 18rem">
+                <img src="/images/cs.jpg" class="card-img-top" alt="..." />
+
+                <div class="card-body">
+                  <p>Computer Science</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvra">
+                    <div class="cor">Include 8 Courses</div>
+                    <hr />
+                    <div class="cor">With Certificate</div>
+                    <hr />
+                    <div class="cor">Beginner Friendly</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card" style="max-width: 18rem">
+                <img
+                  src="/images/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <p>Back-End Engineer</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvra">
+                    <div class="cor">Include 8 Courses</div>
+                    <hr />
+                    <div class="cor">With Certificate</div>
+                    <hr />
+                    <div class="cor">Beginner Friendly</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <br />
+          <p class="headinga">Free courses</p>
+
+          <div class="pgd">
+            <div class="rowa">
+              <div class="card" style="width: 18rem">
+                <div class="wimg">
+                  <img
+                    src="/images/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p>Python 3</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">$40</div>
+                </a>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <div class="wimg">
+                  <img src="/images/git.jpg" class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body">
+                  <p>Github</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">$35</div>
+                </a>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <div class="wimg">
+                  <img
+                    src="/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p>Power BI</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">$30</div>
+                </a>
+              </div>
+            </div>
+
+            <div class="rowa">
+              <div class="card" style="width: 18rem">
+                <div class="wimg">
+                  <img
+                    src="/images/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p>Bootstrap</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">$20</div>
+                </a>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <div class="wimg">
+                  <img
+                    src="/images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p>Express JS</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">$30</div>
+                </a>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <div class="wimg">
+                  <img src="/images/mdb.png" class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body">
+                  <p>MongoDB</p>
+                </div>
+                <a href="register.html">
+                  <div class="hvr">$25</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rght">
+          <ul class="lst">
+            <p style="font-weight: bold">Languages</p>
+            <a href="register.html"><p>C</p></a>
+            <a href="register.html"><p>C++</p></a>
+            <a href="register.html"><p>Python</p></a>
+            <a href="register.html"><p>SQL</p></a>
+            <a href="register.html"><p>HTML</p></a>
+            <a href="register.html"><p>CSS</p></a>
+            <a href="register.html"><p>Java</p></a>
+            <a href="register.html"><p>Java Script</p></a>
+            <a href="register.html"><p>R</p></a>
+          </ul>
+          <ul class="lst">
+            <p style="font-weight: bold">Subjects</p>
+            <a href="register.html"><p>Computer Science</p></a>
+            <a href="register.html"><p>Machine Learning</p></a>
+            <a href="register.html"><p>Data Visualization</p></a>
+            <a href="register.html"><p>Web Development</p></a>
+            <a href="register.html"><p>Web Design</p></a>
+            <a href="register.html"><p>Data Science</p></a>
+            <a href="register.html"><p>App Development</p></a>
+            <a href="register.html"><p>Software Testing</p></a>
+            <a href="register.html"><p>Internet of Things</p></a>
+            <a href="register.html"><p>Networking</p></a>
+            <a href="register.html"><p>Digital Marketing</p></a>
+            <a href="register.html"><p>Linux OS</p></a>
+            <a href="register.html"><p>DSA</p></a>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="f-container">
+        <div class="company">
+          <div class="logo">
+            <!-- <img src="/images/" alt="Logo" /> -->
+            <h3>CODEMATE</h3>
+          </div>
+          <div class="para">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              aspernatur pariatur veritatis, dolorem nobis autem neque totam ea.
+            </p>
+          </div>
+        </div>
+        <div class="link">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="home.html" target="">Home</a></li>
+            <li><a href="about.html" target="">About</a></li>
+            <li><a href="project.html" target="">Blog</a></li>
+            <li><a href="ext.html" target="">Courses</a></li>
+            <li><a href="Contact.html" target="">Contact</a></li>
+            <li><a href="register.html" target="">Join for Free</a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h3>Office</h3>
+          <div class="location">
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Matatoli, Rajendra Ward, Gondia(MH)-441601</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <p>codemateIt@gmail.com</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <p>+91-7894564136</p>
+            </div>
+          </div>
+        </div>
+        <div class="connect">
+          <h3>Connect</h3>
+          <div class="mail">
+            <i class="fa-solid fa-envelope"></i>
+
+            <input type="email" placeholder="Enter your email id" />
+            <a href=""><i class="fa-solid fa-arrowa-right"></i></a>
+          </div>
+          <div class="media">
+            <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+            <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+            <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Codemate It Service:@2023-All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

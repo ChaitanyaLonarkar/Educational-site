@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_Us</title>
+    <script src="https://kit.fontawesome.com/78fc119ecf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/hs.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+            letter-spacing: 0.07em;
+    
+        }
+
+       #top #about-us{
+            background-image: url(/images/about.jpg);
+            height: 60vh;
+            width: 100vw;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+       #top #about-us h1{
+            color: aliceblue;
+            font-size: 45px;
+            letter-spacing: 1px;
+        }
+        #About-contain{
+            display: flex;
+            align-items: center;
+            padding: 8vw 8vw 2vw 8vw;
+        }
+    #About-contain .About-img{
+        width: 60%;
+        padding-right: 30px;
+    }
+    #About-contain .About-txt{
+        width: 40%;
+        
+    }
+    #About-contain .About-txt h2{
+        color: #17155f;
+        padding-bottom: 15px;
+    }
+    #About-contain .About-txt p{
+        color: #686f7a;
+        font-weight: 300 ;
+    }
+    #About-contain .About-img img{
+        width: 100%;
+    }
+    #About-contain .About-txt .About-fee img{ 
+        width: 50px;
+        background-size: contain;
+        background-position: center;
+        margin-right: 20px;
+        height: fit-content;
+        padding-top: 5%;
+    }
+    #About-contain .About-txt .About-fee{
+        display: inline-flex;
+        flex-direction: row;
+        
+    }
+   
+    @media(max-width: 475px){
+        #top #about-us {
+            width: 100%;
+            color: #686f7a;
+
+        }
+        #top #about-us h1 {
+        font-size: 30px;
+    }
+
+        #top{
+            height: 20%;
+            width: 100%;
+        }
+        #About-contain .About-img img {
+            width: 300px;
+        }
+        #About-contain {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8vw 8vw 2vw 8vw;
+        }
+        #About-contain .About-txt {
+          width: 100%;
+        }
+    
+    
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="/images/profile.jpg" alt="Logo" />
+        </div>
+        <div class="links">
+          <ul id="list">
+            <li><a href="index.html" target="">Home</a></li>
+            <li><a href="about.html" target="">About</a></li>
+            <li><a href="blog.html" target="">Blog</a></li>
+            <li><a href="courses.html" target="">Courses</a></li>
+            <li><a href="Contact.html" target="">Contact</a></li>
+            <li><a href="register.html" target="">Join for Free</a></li>
+            <li id="close"><i class="fa-solid fa-circle-xmark " onclick="untoggle()" ></i></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <img src="/images/menu.png" onclick="toggle()" alt="">
+        </div>
+      </nav>
+    <section id="top">
+        <div id="about-us">
+            <h1>About Codem@te IT Services</h1>
+        </div>
+    </section>
+
+    <section id="About-contain">
+        <div class="About-img">
+            <img src="/images/a.png" alt="imgg">
+        </div> 
+        <div class="About-txt">
+            <h2>Welcome to Codemate, Enhance your skills with best Online cources.</h2>
+            <p>We cater different needs of learners from beginner's level to specialised courses. Every course is conducted by industry experts and our eminent faculties having expertise in their respective domain. Along with professional courses we also provide soft skill training by corporate trainers which makes students' placement process easy.</p>
+            <div class="About-fee">
+                <img src="/images/logo1.webp" alt="aa">
+                <div class="fee-txt">
+                    <h5>400+ cources</h5>
+                    <p> You can start and finish one of this courses in under our site</p>
+                </div>
+            </div>
+            <div class="About-fee" id="logo2">
+                <img src="/images/logo1.webp" alt="aa">
+                <div class="fee-txt">
+                    <h5>Lifetime Access</h5>
+                    <p> You can start and finish one of this courses in under our site</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="page2">
+        <div class="center">
+          <h1>Awesome Features</h1>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <i class="fa-solid fa-briefcase fa-lg"></i>
+            <h3>Internship Opportunity</h3>
+            <p>Providing Online/Offline Internship Opportunity</p>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-graduation-cap fa-lg"></i>
+            <h3>Online Learning</h3>
+            <p>Providing Online/Offline Learning Courses on different Tech</p>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-file-circle-check"></i>
+            <h3>Global Certification</h3>
+            <p>
+              Complete Online/Offline Internship or courses and get
+              Certification
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="f-container">
+          <div class="company">
+            <div class="logo">
+              <!-- <img src="/images/" alt="Logo" /> -->
+              <h3>CODEMATE</h3>
+            </div>
+            <div class="para">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                aspernatur pariatur veritatis, dolorem nobis autem neque totam ea.
+              </p>
+            </div>
+          </div>
+          <div class="link">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="index.html" target="">Home</a></li>
+              <li><a href="about.html" target="">About</a></li>
+              <li><a href="courses.html" target="">Courses</a></li>
+              <li><a href="Contact.html" target="">Contact</a></li>
+              <li><a href="register.html" target="">Join for Free</a></li>
+            </ul>
+          </div>
+          <div class="contact-info">
+            <h3>Office</h3>
+            <div class="location">
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+              <p>Hingna Rd, Rajendra Nagar, Yahodha Nagar, Nagpur(MH) 440036</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p>codemateIt@gmail.com</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>+91-7894564136</p>
+              </div>
+            </div>
+          </div>
+          <div class="connect">
+            <h3>Connect</h3>
+            <div class="mail">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Enter your email id" />
+              <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="media">
+              <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+              <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+              <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+              <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Codemate It Service:@2023-All Rights Reserved</p>
+        </div>
+      </footer>
+    <script src="main.js"></script>
+
+
+</body>
+</html>

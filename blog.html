@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blogs</title>
+    <link rel="stylesheet" href="hs.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="abc.css" /> -->
+    <style>
+      .containers {
+        overflow: hidden;
+      }
+      .card {
+        margin: 20px;
+        margin-bottom: 10px;
+      }
+      .abc {
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Nunito", sans-serif;
+        letter-spacing: 0.07em;
+        /* overflow: hidden; */
+        width: 100%;
+      }
+      .outside {
+        display: flex;
+        width: 70vw;
+        margin: auto;
+      }
+      @media (max-width: 768px) {
+        .outside {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100vw;
+          margin: auto;
+        }
+        .category {
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--    nav bar start -->
+    <!--    nav bar start -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/images/profile.jpg" alt="Logo" />
+      </div>
+      <div class="links">
+        <ul id="list">
+          <li><a href="index.html" target="">Home</a></li>
+          <li><a href="about.html" target="">About</a></li>
+          <li><a href="blog.html" target="">Blog</a></li>
+          <li><a href="courses.html" target="">Courses</a></li>
+          <li><a href="Contact.html" target="">Contact</a></li>
+          <li><a href="register.html" target="">Join for Free</a></li>
+          <li id="close">
+            <i class="fa-solid fa-circle-xmark" onclick="untoggle()"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="menu">
+        <img src="/images/menu.png" onclick="toggle()" alt="" />
+      </div>
+    </nav>
+    <!--    nav bar end -->
+    <!-- main part of website -->
+    <main>
+      <!-- page1 start -->
+      <div
+        class="page1"
+        style="background: url(/images/man\ \(2\).jpg) no-repeat center"
+      >
+        <div class="inside">
+          <h1>Blog/</h1>
+        </div>
+      </div>
+      <!-- page1 end -->
+      <!-- page2 start -->
+      <div class="outside">
+        <div class="containers">
+          <div class="card">
+            <img
+              src="/images/luke-chesser-JKUTrJ4vK00-unsplash.jpg"
+              class="card-img-top"
+              alt="Data Science Image"
+              height="450px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Data Science</h5>
+              <p class="card-text">
+                Data science is the study of data to extract meaningful insights
+                for business. It is a multidisciplinary approach that combines
+                principles and practices from the fields of mathematics,
+                statistics, artificial intelligence, and computer engineering to
+                analyze large amounts of data.
+              </p>
+              <a href="project1.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="/images/possessed-photography-jIBMSMs4_kA-unsplash.jpg"
+              class="card-img-top"
+              alt="Machine learning Image"
+              height="450px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Machine learning</h5>
+              <p class="card-text">
+                Machine learning is a branch of artificial intelligence (AI) and
+                computer science which focuses on the use of data and algorithms
+                to imitate the way that humans learn, gradually improving its
+                accuracy.
+              </p>
+              <a href="project2.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg"
+              class="card-img-top"
+              alt="Data Visualization Image"
+              height="450px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Data Visualization</h5>
+              <p class="card-text">
+                Data visualization is the graphical representation of
+                information and data. By using visual elements like charts,
+                graphs, and maps, data visualization tools provide an accessible
+                way to see and understand trends, outliers, and patterns in
+                data.
+              </p>
+              <a href="project3.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="/images/webdev.jpg"
+              class="card-img-top"
+              alt="Web Development Image"
+              height="450px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Web development refers to the creating, building, and
+                maintaining of websites. It includes aspects such as web design,
+                web publishing, web programming, and database management. It is
+                the creation of an application that works over the internet i.e.
+                websites.
+              </p>
+              <a href="project4.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="/images/emile-perron-xrVDYZRGdw4-unsplash.jpg"
+              class="card-img-top"
+              alt="Full Stack Image"
+              height="450px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Full Stack (MERN)</h5>
+              <p class="card-text">
+                MERN is one of several variations of the MEAN stack (MongoDB
+                Express Angular Node), where the traditional Angular.js
+                front-end framework is replaced with React.js.
+              </p>
+              <a href="project5.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="/images/rami-al-zayat-w33-zg-dNL4-unsplash.jpg"
+              class="card-img-top"
+              alt="Android Application Image"
+              height="450px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Android Application</h5>
+              <p class="card-text">
+                Android App is a software designed to run on an Android device
+                or emulator. The term also refers to an APK file which stands
+                for Android package. This file is a Zip archive containing app
+                code, resources, and meta information.
+              </p>
+              <a href="project6.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="/images/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+              class="card-img-top"
+              alt="Software Testing Image"
+              height="450px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Software Testing</h5>
+              <p class="card-text">
+                Software testing is the process of evaluating and verifying that
+                a software product or application does what it is supposed to
+                do. The benefits of testing include preventing bugs, reducing
+                development costs and improving performance.
+              </p>
+              <a href="project7.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="/images/zan-wGqz5YSqsfk-unsplash.jpg"
+              class="card-img-top"
+              alt="Internet of Things Image"
+              height="450px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Internet of Things (IOT)</h5>
+              <p class="card-text">
+                The Internet of Things (IoT) describes the network of physical
+                objects—“things”—that are embedded with sensors, software, and
+                other technologies for the purpose of connecting and exchanging
+                data with other devices and systems over the internet. These
+                devices range from ordinary household objects to sophisticated
+                industrial tools.
+              </p>
+              <a href="project8.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="/images/thomas-jensen-plL_yZ7vuxM-unsplash.jpg"
+              class="card-img-top"
+              alt="Networking Image"
+              height="450px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Networking</h5>
+              <p class="card-text">
+                Networking, also known as computer networking, is the practice
+                of transporting and exchanging data between nodes over a shared
+                medium in an information system. Networking comprises not only
+                the design, construction and use of a network, but also the
+                management, maintenance and operation of the network
+                infrastructure, software and policies.
+              </p>
+              <a href="project9.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="abc">
+            <h3>
+              Categories
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </h3>
+            <hr />
+            <a href="project1.html">Data Science</a>
+            <hr />
+            <a href="project2.html">Machine Learning</a>
+            <hr />
+            <a href="project3.html">Data Visualization</a>
+            <hr />
+            <a href="project4.html">Web development</a>
+            <hr />
+            <a href="project5.html">Full Stack (MERN)</a>
+            <hr />
+            <a href="project6.html">Android Application</a>
+            <hr />
+            <a href="project7.html">Software Testing</a>
+            <hr />
+            <a href="project8.html">Internet of Things (IOT)</a>
+            <hr />
+            <a href="project9.html">Networking</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page6">
+        <div class="center">
+          <h1>Trusted By</h1>
+        </div>
+        <div class="trust">
+          <img src="/images/trust (1).png" alt="" />
+          <img src="/images/trust (2).png" alt="" />
+          <img src="/images/trust (3).png" alt="" />
+          <img src="/images/trust (4).png" alt="" />
+          <img src="/images/trust (5).png" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="f-container">
+        <div class="company">
+          <div class="logo">
+            <!-- <img src="/images/" alt="Logo" /> -->
+            <h3>CODEMATE</h3>
+          </div>
+          <div class="para">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              aspernatur pariatur veritatis, dolorem nobis autem neque totam ea.
+            </p>
+          </div>
+        </div>
+        <div class="link">
+          <h3>Links</h3>
+          <ul>
+            <ul>
+              <li><a href="home.html" target="">Home</a></li>
+              <li><a href="http://" target="">About</a></li>
+              <li><a href="project.html" target="">Blog</a></li>
+              <li><a href="ext.html" target="">Courses</a></li>
+              <li><a href="http://" target="">Contact</a></li>
+              <li><a href="signup.html" target="">Join for Free</a></li>
+            </ul>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h3>Office</h3>
+          <div class="location">
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Matatoli, Rajendra Ward, Gondia(MH)-441601</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <p>codemateIt@gmail.com</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <p>+91-7894564136</p>
+            </div>
+          </div>
+        </div>
+        <div class="connect">
+          <h3>Connect</h3>
+          <div class="mail">
+            <i class="fa-solid fa-envelope"></i>
+
+            <input type="email" placeholder="Enter your email id" />
+            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="media">
+            <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+            <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+            <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Codemate It Service:@2023-All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
